@@ -1,0 +1,9 @@
+#bodyer .form p {
+	margin: 10px 0;
+}
+#bodyer .form textarea, #bodyer .form input[type="text"] {
+	width: 670px;
+}
+#bodyer .form textarea {
+	height: 200px;
+}

@@ -1,0 +1,14 @@
+- if @posts
+	- @posts.each do | r |
+		.list
+			p.title
+				h3
+					a href="#{_url('/www/post/' + r[:cpid].to_s)}" target="_blank" = r[:title]
+
+			p.body
+				== www_cut(r[:body])
+
+- if @page_size == @posts.count and @page_number == 0
+	#more.clear : a href="" ctid="#{@tag}" = Sl[:more]
+
+	== _js('www/list.js')

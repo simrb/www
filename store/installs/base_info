@@ -1,0 +1,6 @@
+---
+- name			: www
+  author		: linyu deng
+  version		: 1.0.0
+  dependon		: base, data, view, admin, user
+  description	: a simple module that lets you publishing article

@@ -1,0 +1,25 @@
+---
+- name			: www
+  link			: /admin/www
+  tag			: admin
+  
+- name			: post
+  link			: /admin/view/www_posts
+  parent		: www
+  tag			: admin
+  
+- name			: comment
+  link			: /admin/view/www_comments
+  parent		: www
+  tag			: admin
+  
+- name			: Home
+  link			: /www/page/1
+  tag			: www_main_menu
+  description	: a simple way to build your application with ruby
+
+- name			: Articles
+  link			: /www/tag/all
+  tag			: www_main_menu
+  description	: the article about simrb
+

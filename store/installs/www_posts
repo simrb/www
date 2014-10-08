@@ -1,0 +1,5 @@
+---
+- title		: Welcome to simrb
+  body		: Simrb is a simple web framework
+  uid		: 1
+  tag		: home

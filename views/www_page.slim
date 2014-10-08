@@ -1,0 +1,7 @@
+#post
+	- if @post
+		.list
+			p.body
+				article == _m2h(@post[:body])
+
+.clear
