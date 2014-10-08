@@ -1,1 +1,1 @@
-A simple module that lets you publishing article
+A simple module that lets you publish article
