@@ -6,6 +6,10 @@
 			p.label
 				- users = data_kv(:user_info, :uid, :name)
 				label #{users[@post[:uid]]} , #{_time(@post[:created])}
+				- if user_login? and user_info[:uid] == @post[:uid]
+					label
+						span , 
+						a href="#{_url('/www/edit/post', :cpid => @post[:cpid])}" edit
 			p.body
 				article == _m2h(@post[:body])
 
