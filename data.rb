@@ -1,3 +1,12 @@
+data :www_types do
+	{
+		:wtid				=>	{
+			:primary_key	=>	true
+		},
+		:name				=>	{},
+	}
+end
+
 data :www_posts do
 	{
 		:cpid				=>	{
@@ -6,6 +15,10 @@ data :www_posts do
 		:title				=>	{},
 		:body				=>	{
 			:type			=>	'Text'
+		},
+		:wtid				=>	{
+			:assoc_one		=>	[:www_types, :name],
+			:label			=>	'type'
 		},
 		:uid				=>	{
 			:form_type		=>	:hide,

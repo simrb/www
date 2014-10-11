@@ -3,6 +3,11 @@
   link			: /admin/www
   tag			: admin
   
+- name			: type
+  link			: /admin/view/www_types
+  parent		: www
+  tag			: admin
+
 - name			: post
   link			: /admin/view/www_posts
   parent		: www
