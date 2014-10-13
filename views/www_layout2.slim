@@ -8,14 +8,11 @@ html
 		script src="#{_assets('view/js/jquery.js')}" type="text/javascript"
 		link rel="shortcut icon" href="#{_assets(_var(:favicon, :view))}" type="image/x-icon"
 		link rel='stylesheet' type='text/css' href='#{_assets("view/css/style.css")}'
-		link rel='stylesheet' type='text/css' href="#{_assets("www/main.css")}"
+		link rel='stylesheet' type='text/css' href="#{_assets("www/layout.css")}"
 	body
 		#wrap
 
 			#header
-				#title
-					h1 Simrb
-
 				#menu
 					- menu = data_menu(:www_main_menu)
 					.item.left
@@ -40,6 +37,7 @@ html
 
 				== _tpl(:view_message)
 				.clear
+
 
 			#bodyer
 				== yield
