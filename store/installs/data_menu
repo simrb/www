@@ -24,7 +24,7 @@
   description	: a simple way to build your application with ruby
 
 - name			: Articles
-  link			: /www/tag/all
+  link			: /www/list/all
   tag			: www_main_menu
   description	: the article about simrb
 

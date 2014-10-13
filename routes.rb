@@ -1,5 +1,5 @@
 # list the posts by tag
-get '/www/tag/:name' do
+get '/www/list/:name' do
 	@tag 				= params[:name]
 	@page_size			= 20
  	@posts 				= www_list @tag, @page_size
@@ -68,7 +68,7 @@ end
 post '/www/edit/post' do
 	data_submit :www_posts
 # 	redirect _var(:home, :link)
-	redirect _url('/www/tag/all')
+	redirect _url('/www/list/all')
 end
 
 # submit a comment
