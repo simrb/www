@@ -46,7 +46,7 @@ pre, code 		{ background: #C7B190; }
 #menu .item ul span { margin: 0 10px 10px 10px; }
 #menu2 label 	{ padding: 3px 8px; margin: 5px 3px; }
 
-#menu, #menu2, #bodyer, #footer { padding: 0 40px; margin: 0 auto; }
+#menu, #menu2, #bodyer, #footer, #header #title { padding: 0 40px; margin: 0 auto; }
 
 #bodyer 		{ margin-top: 80px; }
 #bodyer .list 	{ margin-bottom: 15px; }
