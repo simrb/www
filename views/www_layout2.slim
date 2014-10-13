@@ -12,7 +12,7 @@ html
 	body
 		#wrap
 
-			#header
+			#header.keeptop
 				#menu
 					- menu = data_menu(:www_main_menu)
 					.item.left
@@ -46,4 +46,6 @@ html
 			#footer
 				p = _var(:www_footer, :www)
 				.clear
+
+			== _js('view/js/topmenu.js')
 

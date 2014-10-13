@@ -27,6 +27,9 @@ data :www_posts do
 		:created			=>	{
 			:default		=>	Time.now
 		},
+		:changed			=>	{
+			:default		=>	Time.now
+		},
 	}
 end
 
@@ -58,10 +61,10 @@ end
 
 valid :www_comments do | f |
 
-	user_mark :www_comments, 30, L['you have not send the comment in 30 seconds']
+	user_mark :www_comments, 30, Sl['you have not send the comment in 30 seconds']
 
 	if f[:body] and f[:body].strip == ''
-		_throw L[:'the content is not null']
+		_throw Sl[:'the content is not null']
 	end
 
 end

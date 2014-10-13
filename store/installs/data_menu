@@ -23,8 +23,8 @@
   tag			: www_main_menu
   description	: a simple way to build your application with ruby
 
-- name			: Articles
+- name			: Posts
   link			: /www/list/all
   tag			: www_main_menu
-  description	: the article about simrb
+  description	: the list of posts
 
