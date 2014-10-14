@@ -35,8 +35,13 @@ html
 										span = Sl[:exit]
 
 						- else
-							a href="#{_url('/l')}"
-								span = Sl[:login]
+							a href="#"
+								span = user_info[:name]
+
+							ul.hide.dropdownlist
+								li
+									a href="#{_url('/l')}"
+										span = Sl[:login]
 
 				#menu2
 

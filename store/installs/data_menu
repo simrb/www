@@ -21,7 +21,7 @@
 - name			: Home
   link			: /www/page/1
   tag			: www_main_menu
-  description	: a simple way to build your application with ruby
+  description	: home page
 
 - name			: Posts
   link			: /www/list/all
