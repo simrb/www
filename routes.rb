@@ -36,7 +36,7 @@ get '/www/post/:cpid' do
 	data_markdown_load
 	cpid				= params[:cpid]
  	@post 				= Sdb[:www_posts].filter(:cpid => cpid).first
- 	@comments 			= Sdb[:www_comments].filter(:cpid => cpid).all
+ 	@comments 			= Sdb[:www_comments].filter(:cpid => cpid).reverse_order(:created).all
 
 	if @post == nil
 		www_error Sl[:'No post']
