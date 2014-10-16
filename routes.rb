@@ -67,8 +67,12 @@ end
 
 post '/www/edit/post' do
 	data_submit :www_posts
-# 	redirect _var(:home, :link)
-	redirect _url('/www/list/all')
+	cpid = @qs[:cpid] ? @qs[:cpid] : (params[:cpid] ? params[:cpid] : nil)
+	if cpid == nil
+		redirect _url('/www/list/all')
+	else
+		redirect _url("/www/post/#{cpid}")
+	end
 end
 
 # submit a comment
