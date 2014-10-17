@@ -13,7 +13,7 @@ body, #wrap 	{ 	background: #F5EAD3; }
 				background: #F8F2D9; 
 				}
 #menu2 label:hover { background: #C7B190; }
-pre, code 		{ background: #C7B190; }
+pre, code 		{ background: #D8C8AF; }
 
 
 
@@ -54,7 +54,8 @@ pre, code 		{ background: #C7B190; }
 #bodyer .list .title, #bodyer .list .label, #bodyer .list .body { margin-bottom: 5px; }
 
 article pre		{ padding: 5px 10px; }
-article p, article pre, article h1, article h2, article h3, article h4, article h5 { margin-bottom: 8px; }
+article p, article pre { margin-bottom: 8px; }
+article h1, article h2, article h3, article h4, article h5 { margin-bottom: 5px; }
 
 
 
