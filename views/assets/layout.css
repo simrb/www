@@ -54,7 +54,7 @@ pre, code 		{ background: #C7B190; }
 #bodyer .list .title, #bodyer .list .label, #bodyer .list .body { margin-bottom: 5px; }
 
 article pre		{ padding: 5px 10px; }
-article p, article pre { margin-bottom: 15px; }
+article p, article pre, article h1, article h2, article h3, article h4, article h5 { margin-bottom: 8px; }
 
 
 
