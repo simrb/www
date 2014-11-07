@@ -13,15 +13,13 @@
 			p.body
 				article == _m2h(@post[:body])
 
-.clear
-
 #comment
 	- if @comments
 		- @comments.each do | r |
 			.list id="ccid_#{r[:ccid]}"
 				span.label.secondary.round By #{r[:author]} , #{_time(r[:created])}
-				p.body
-					== _m2h(r[:body])
+				p.body == _m2h(r[:body])
 
-	== view_form(:www_comments, :tpl => :view_form2, :fields => [:cpid, :body], :action => '/www/comment')
+	- if _var(:www_comment_open) == 'on'
+		== view_form(:www_comments, :tpl => :view_form2, :fields => [:cpid, :body], :action => '/www/comment')
 

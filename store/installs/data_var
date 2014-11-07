@@ -24,3 +24,8 @@
   description	: default page layout
   tag			: www
 
+- dkey			: www_comment_open
+  dval			: on
+  description	: open the comment with on/off value
+  tag			: www
+
