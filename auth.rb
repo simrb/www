@@ -12,3 +12,9 @@
 # 		view_level? _var(:form_submit_level)
 	end
 end
+
+before '/www/comment' do
+	unless _var(:www_comment_open) == 'on'
+		redirect back
+	end
+end
