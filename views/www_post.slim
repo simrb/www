@@ -3,14 +3,13 @@
 		.list
 			p.title
 				h2 = @post[:title]
-			p.label
 				- users = data_kv(:user_info, :uid, :name)
-				label By #{users[@post[:uid]]}, 
-				label updated at #{@post[:changed].strftime("%Y-%m-%d %H:%M")}
-				- if user_login? and user_info[:uid] == @post[:uid]
-					label
-						span , 
-						a href="#{_url('/www/edit/post', :cpid => @post[:cpid])}" edit
+				span.label.secondary.round
+					| By #{users[@post[:uid]]}, 
+					| updated at #{@post[:changed].strftime("%m/%d/%Y %H:%M")} 
+					- if user_login? and user_info[:uid] == @post[:uid]
+						|, 
+						a href="#{_url('/www/edit/post', :cpid => @post[:cpid])}" = Sl[:edit]
 			p.body
 				article == _m2h(@post[:body])
 
@@ -20,9 +19,7 @@
 	- if @comments
 		- @comments.each do | r |
 			.list id="ccid_#{r[:ccid]}"
-				p.label
-					label #{r[:author]} , #{_time(r[:created])}
-					
+				span.label.secondary.round By #{r[:author]} , #{_time(r[:created])}
 				p.body
 					== _m2h(r[:body])
 

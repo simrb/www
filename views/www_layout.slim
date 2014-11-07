@@ -1,59 +1,55 @@
 doctype html
-html
+html class="no-js" lang="en"
 	head
 		title = @t[:title]
 		meta name="description" content="#{@t[:description]}"
 		meta name="keywords" content="#{@t[:keywords]}"
-		meta http-equiv="content-type" content="text/html; charset=UFT-8"
-		script src="#{_assets('view/js/jquery.js')}" type="text/javascript"
+		meta charset="utf-8"
+		meta name="viewport" content="width=device-width, initial-scale=1.0"
 		link rel="shortcut icon" href="#{_assets(_var(:favicon, :view))}" type="image/x-icon"
-		link rel='stylesheet' type='text/css' href='#{_assets("view/css/style.css")}'
-		link rel='stylesheet' type='text/css' href="#{_assets("www/layout.css")}"
+		== _css("view/css/foundation.css")
+		== _css("view/main.css")
+		== _css("www/main.css")
+		== _js("view/js/vendor/modernizr.js")
 	body
-		#wrap
+		#header.fixed.contain-to-grid: nav.top-bar data-topbar="" role="navigation" 
+			ul.title-area
+				li.name
+					h1
+						a href="#" Simrb
+				li.toggle-topbar.menu-icon
+					a href="#"
+						span Menu
 
-			#header.keeptop
-				#menu
+			section.top-bar-section
+				ul.right
+					li.has-dropdown
+						a href="#" = user_info[:name]
+						ul.dropdown
+							- if user_login?
+								li
+									a href="#{_url('/www/edit/post')}" = Sl[:'new post']
+								li
+									a href="#{_url('/user/logout')}" = Sl[:exit]
+							- else
+								li
+									a href="#{_url('/l')}" = Sl[:login]
+
+				ul.left
 					- menu = data_menu(:www_main_menu)
-					.item.left
-						- if menu
-							- menu.each do | r |
-								a href="#{r[:link]}"
-									span = r[:name]
+					- if menu
+						- menu.each do | r |
+							li
+								a href="#{r[:link]}" = r[:name]
 
-					.item.right.dropdownitem
-						- if user_login?
-							a href="#"
-								span = user_info[:name]
 
-							ul.hide.dropdownlist
-								li
-									a href="#{_url('/www/edit/post')}"
-										span = Sl[:'new post']
-								li
-									a href="#{_url('/user/logout')}"
-										span = Sl[:exit]
+		.holderplace.hide-for-small
+		#msg == _tpl(:view_message)
+		#main == yield
+		#footer = _var(:www_footer, :www)
 
-						- else
-							a href="#"
-								span = user_info[:name]
+		== _js("view/js/vendor/jquery.js")
+		== _js("view/js/foundation.min.js")
+		== _js("www/main.js")
+		== _js('www/list.js')
 
-							ul.hide.dropdownlist
-								li
-									a href="#{_url('/l')}"
-										span = Sl[:login]
-
-				#menu2
-
-				== _tpl(:view_message)
-				.clear
-
-			#bodyer
-				== yield
-				.clear
-
-			#footer
-				p = _var(:www_footer, :www)
-				.clear
-
-			== _js('view/js/topmenu.js')

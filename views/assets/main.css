@@ -1,0 +1,95 @@
+/* color */
+.top-bar,
+.contain-to-grid,
+.top-bar.expanded .title-area,
+.form .button,
+.top-bar-section .has-dropdown a:hover,
+.top-bar-section li:not(.has-form) a:not(.button),
+.top-bar-section li.active:not(.has-form) a:not(.button),
+.top-bar-section li.active:not(.has-form) a:not(.button):hover,
+.top-bar-section .dropdown li:not(.has-form) a:not(.button):hover,
+.top-bar-section .dropdown li:not(.has-form):not(.active) > a:not(.button):hover {
+	background: #BDB09A;
+	background: #B1A28A;
+	background: #D5C9B4;
+	background: #C5BBAA;
+}
+
+.top-bar-section ul li:hover > a,
+.top-bar-section ul li:hover:not(.has-form) > a,
+.top-bar-section li:not(.has-form) a:not(.button):hover,
+.top-bar-section .dropdown li:not(.has-form):not(.active) > a:not(.button) {
+	background: #F5EAD3;
+}
+
+body {
+	background: #F5EAD3;
+}
+
+#main a {
+	color: #42270D;
+}
+pre, code {
+	background: #E2D5BD;
+	width: 100%;
+	margin-bottom: 1.25rem;
+	border-radius: 4px;
+}
+#main .label {
+	background: #E2D5BD;
+}
+
+.top-bar .name h1 a,
+.top-bar-section ul li > a,
+.top-bar .toggle-topbar.menu-icon a,
+.top-bar-section .dropdown li.title h5 a,
+.top-bar-section .dropdown li.parent-link a,
+.top-bar-section .dropdown li:not(.has-form):not(.active) > a:not(.button) {
+	color: black;
+	font-weight: 900;
+}
+
+.form .button,
+.top-bar-section ul li:hover:not(.has-form) > a,
+.top-bar-section .dropdown li:not(.has-form):not(.active) > a:not(.button):hover {
+	color: black;
+}
+
+input[type="text"], input[type="password"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="month"], input[type="week"], input[type="email"], input[type="number"], input[type="search"], input[type="tel"], input[type="time"], input[type="url"], input[type="color"], textarea {
+	background: #F7F3DC;
+	border-color: #8B7F69;
+}
+input[type="text"]:focus, input[type="password"]:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="month"]:focus, input[type="week"]:focus, input[type="email"]:focus, input[type="number"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="time"]:focus, input[type="url"]:focus, input[type="color"]:focus, textarea:focus {
+	background: #F7F3DC;
+	border-color: #74602D;
+}
+
+
+/* height */
+.top-bar,
+.top-bar .name,
+.top-bar ul .title-area,
+.top-bar .name h1,
+.top-bar-section li:not(.has-form) a:not(.button) {
+	height: 33px;
+}
+
+.top-bar .name h1,
+.top-bar-section li:not(.has-form) a:not(.button) {
+	line-height: 33px;
+}
+.top-bar-section .has-dropdown > a::after {
+	top: 50%;
+}
+.top-bar-section ul li > a,
+.top-bar-section .dropdown li a {
+	padding: 0px 15px;
+}
+textarea {
+	height: 150px;
+}
+#comment textarea {
+	height: 74px;
+}
+
+
