@@ -18,3 +18,15 @@ before '/www/comment' do
 		redirect back
 	end
 end
+
+before '/view/operate' do
+	if params[:_name] == 'www_posts'
+		# set the allowed level of submit post
+	else
+		view_level? _var(:admin_level)
+	end
+end
+
+before '/admin/*' do
+	view_level? _var(:admin_level)
+end
