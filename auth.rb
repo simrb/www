@@ -14,7 +14,7 @@
 end
 
 before '/www/comment' do
-	unless _var(:www_comment_open) == 'on'
+	unless _var3(:www_comment_open)
 		redirect back
 	end
 end

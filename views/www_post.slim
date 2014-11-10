@@ -20,6 +20,6 @@
 				span.label.secondary.round By #{r[:author]} , #{_time(r[:created])}
 				p.body == _m2h(r[:body])
 
-	- if _var(:www_comment_open) == 'on'
+	- if _var3(:www_comment_open)
 		== view_form(:www_comments, :tpl => :view_form2, :fields => [:cpid, :body], :action => '/www/comment')
 
