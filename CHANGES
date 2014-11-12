@@ -1,8 +1,11 @@
-by linyu deng, at 2014/11/09
+by linyu deng, at Nov, 2014
 
-- 001 set the sumbiting authorization for post
+- set the sumbiting authorization for post 09
+- correct the link of assets assigned of templates 11
+- variablify the constant in templates 12
 
-by linyu deng, at 2014/11/09
+by linyu deng, at Oct, 2014
 
-- mark down what are you want to do with * at the front each line
-- remove the * if that task had been done
+- mark down what are you want to do with asterisk at the end of that line
+- remove the * if that task have been done
+- the number of the end of each line is the day as task ID

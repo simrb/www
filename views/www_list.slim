@@ -7,6 +7,8 @@
 			p.body
 				== www_cut(r[:body])
 
+	- @t[:js][:list] = 'www/list.js'
+
 - if @page_size == @posts.count and @page_number == 0
 	p#more : a href="" ctid="#{@tag}" = Sl[:more]
 

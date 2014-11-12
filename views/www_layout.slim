@@ -16,10 +16,10 @@ html class="no-js" lang="en"
 			ul.title-area
 				li.name
 					h1
-						a href="#" Simrb
+						a href="#" = _var(:www_title, :www)
 				li.toggle-topbar.menu-icon
 					a href="#"
-						span Menu
+						span = Sl[:menu]
 
 			section.top-bar-section
 				ul.right
@@ -48,8 +48,12 @@ html class="no-js" lang="en"
 		#main == yield
 		#footer = _var(:www_footer, :www)
 
+		- @t[:css].each do | name, path |
+			== _css(path)
+
 		== _js("view/js/vendor/jquery.js")
 		== _js("view/js/foundation.min.js")
 		== _js("www/main.js")
-		== _js('www/list.js')
 
+		- @t[:js].each do | name, path |
+			== _js(path)
