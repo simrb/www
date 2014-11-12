@@ -36,12 +36,11 @@ helpers do
 	end
 
 	def www_page name
-		@layout 			||= _var(:www_layout, :www).to_sym
 		@t[:description] 	||= _var(:www_description, :www)
 		@t[:keywords] 		||= _var(:www_keywords, :www)
 		@t[:title] 			= _var(:www_title, :www) if @t[:title] == nil
 # 		@t[:title] = @t[:title] == nil ? _var(:www_title, :www) : (@t[:title] + ' - ' + _var(:www_title, :www)) 
-		_tpl name, @layout
+		_tpl name, _var(:www_layout, :www).to_sym
 	end
 
 	def www_error str

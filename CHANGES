@@ -1,11 +1,12 @@
 by linyu deng, at Nov, 2014
-
 - set the sumbiting authorization for post 09
 - correct the link of assets assigned of templates 11
 - variablify the constant in templates 12
 
 by linyu deng, at Oct, 2014
-
-- mark down what are you want to do with asterisk at the end of that line
-- remove the * if that task have been done
-- the number of the end of each line is the day as task ID
+- initialize this file by author and date, and the month moves backward for one, like Nov -> Oct
+- mark down what are you want to do, and sign an asterisk at the end of each line or on the top of list block
+- remove the asterisk if these tasks have been done
+- the number at the end of each line is the day as task ID, and commit by like that C1411 10, C1411 10-12
+  C1411 10 		- the task at Nov, 2014, id 10
+  c1411 10-12 	- the task at Nov, 2014, id from 10 to 12
