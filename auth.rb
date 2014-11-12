@@ -9,7 +9,6 @@
 ['/view/operate', '/admin/*', '/www/edit/post'].each do | path |
 	before path do
 		view_login?
-# 		view_level? _var(:form_submit_level)
 	end
 end
 
@@ -21,9 +20,9 @@ end
 
 before '/view/operate' do
 	if params[:_name] == 'www_posts'
-		# set the allowed level of submit post
+		#view_level? _var(:www_post_level)
 	else
-		view_level? _var(:admin_level)
+ 		view_level? _var(:view_post_level)
 	end
 end
 
