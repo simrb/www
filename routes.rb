@@ -75,9 +75,4 @@ post '/www/edit/post' do
 	end
 end
 
-# submit a comment
-post '/www/comment' do
-	data_submit :www_comments
-	redirect back
-end
 
