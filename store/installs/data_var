@@ -3,22 +3,22 @@
   dval			: Simrb
   description	: main page title
   tag			: www
-  
+
 - dkey			: www_description
   dval			: A simple way to build your web application
   description	: main page description
   tag			: www
-  
+
 - dkey			: www_keywords
   dval			: main page keywords
   description	: simrb
   tag			: www
-  
+
 - dkey			: www_footer
   dval			: Copyleft by Simrb.
   description	: page footer of layout
   tag			: www
-  
+
 - dkey			: www_layout
   dval			: www_layout
   description	: default page layout
@@ -28,4 +28,14 @@
   dval			: on
   description	: open the comment with on/off value
   tag			: www
+
+- dkey			: www_comment_level
+  dval			: 0
+  description	: allow the user add the comment under this level
+  tag			: www,level
+
+- dkey			: www_post_level
+  dval			: 1
+  description	: allow the user create a post under this level
+  tag			: www,level
 

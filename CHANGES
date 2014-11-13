@@ -1,9 +1,12 @@
 by linyu deng, at Nov, 2014
+
 - set the sumbiting authorization for post 09
 - correct the link of assets assigned of templates 11
 - variablify the constant in templates 12
+- reset the user auth of routes, adjust the level that allows user make a submitting for post and comment 13
 
 by linyu deng, at Oct, 2014
+
 - initialize this file by author and date, and the month moves backward for one, like Nov -> Oct
 - mark down what are you want to do, and sign an asterisk at the end of each line or on the top of list block
 - remove the asterisk if these tasks have been done
