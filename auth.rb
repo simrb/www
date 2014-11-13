@@ -5,14 +5,6 @@
 # 	end
 # end
 
-# for user login
-#['/view/operate', '/admin/*', '/www/edit/post', '/www/comment'].each do | path |
-# ['/admin/*', '/www/edit/post'].each do | path |
-# 	before path do
-# 		view_login?
-# 	end
-# end
-
 before '/www/edit/post' do
 	view_login?
 end
@@ -31,6 +23,3 @@ before '/view/operate' do
 	end
 end
 
-before '/admin/*' do
-	view_level? _var(:admin_level)
-end
