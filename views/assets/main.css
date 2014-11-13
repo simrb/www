@@ -86,11 +86,12 @@ input[type="text"]:focus, input[type="password"]:focus, input[type="date"]:focus
 .top-bar-section .dropdown li a {
 	padding: 0px 15px;
 }
-textarea {
-	height: 150px;
-}
+
 #comment textarea {
 	height: 74px;
 }
 
-
+/* padding, margin */
+#main .label {
+	padding: 3px;
+}

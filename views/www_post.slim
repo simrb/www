@@ -15,6 +15,7 @@
 
 #comment
 	- if @comments
+		h2 = Sl[:Comments]
 		- @comments.each do | r |
 			.list id="ccid_#{r[:ccid]}"
 				span.label.secondary.round By #{r[:author]} , #{_time(r[:created])}
