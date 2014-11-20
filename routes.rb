@@ -57,7 +57,7 @@ get '/www/edit/post' do
 	]
 
 	view_form(:www_posts, {
-			:layout 		=> _var(:layout, :www),
+			:layout 		=> _var(:layout, :www).to_sym,
 			:tpl 			=> :view_form2,
 			:action 		=> _url('/www/edit/post'),
 		}
