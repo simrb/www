@@ -19,22 +19,22 @@
   description	: page footer of layout
   tag			: www
 
-- dkey			: www_layout
+- dkey			: layout
   dval			: www_layout
   description	: default page layout
   tag			: www
 
-- dkey			: www_comment_open
+- dkey			: comment_open
   dval			: on
   description	: open the comment with on/off value
   tag			: www
 
-- dkey			: www_comment_level
+- dkey			: comment_level
   dval			: 0
   description	: allow the user add the comment under this level
   tag			: www,level
 
-- dkey			: www_post_level
+- dkey			: post_level
   dval			: 1
   description	: allow the user create a post under this level
   tag			: www,level

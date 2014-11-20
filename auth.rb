@@ -11,10 +11,10 @@ end
 
 before '/view/operate' do
 	if params[:_name] == 'www_posts'
-		view_level? _var(:www_post_level)
+		view_level? _var(:post_level, :www)
 	elsif params[:_name] == 'www_comments'
-		if _var3(:www_comment_open)
-			view_level? _var(:www_comment_level)
+		if _var3(:comment_open, :www)
+			view_level? _var(:comment_level, :www)
 		else
 			redirect back
 		end

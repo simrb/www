@@ -39,12 +39,12 @@ helpers do
 		@t[:title] = _var(:title, :www) if @t[:title] == nil
 # 		@t[:title] = @t[:title] == nil ? _var(:title, :www) : (@t[:title] + ' - ' + _var(:title, :www)) 
 #
-		_tpl name, _var(:www_layout, :www).to_sym, :www
+		_tpl name, _var(:layout, :www).to_sym, :www
 	end
 
 	def www_error str
 		@www_error = str
-		_tpl :www_error, _var(:www_layout, :www).to_sym
+		_tpl :www_error, _var(:layout, :www).to_sym, :www
 	end
 
 	def www_author
@@ -52,7 +52,7 @@ helpers do
 	end
 
 	def user_page name
-		_tpl name, _var(:www_layout, :www).to_sym, :www
+		_tpl name, _var(:layout, :www).to_sym, :www
 	end
 
 end

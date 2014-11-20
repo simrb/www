@@ -21,6 +21,6 @@
 				span.label.secondary.round By #{r[:author]} , #{_time(r[:created])}
 				p.body == _m2h(r[:body])
 
-	- if _var3(:www_comment_open)
+	- if _var3(:comment_open, :www)
 		== view_form(:www_comments, :tpl => :view_form2, :fields => [:cpid, :body])
 
