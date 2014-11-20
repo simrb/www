@@ -1,20 +1,20 @@
 ---
-- dkey			: www_title
+- dkey			: title
   dval			: Simrb
   description	: main page title
   tag			: www
 
-- dkey			: www_description
+- dkey			: description
   dval			: A simple way to build your web application
   description	: main page description
   tag			: www
 
-- dkey			: www_keywords
+- dkey			: keywords
   dval			: main page keywords
   description	: simrb
   tag			: www
 
-- dkey			: www_footer
+- dkey			: footer
   dval			: Copyleft by Simrb.
   description	: page footer of layout
   tag			: www

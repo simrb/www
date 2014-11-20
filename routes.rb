@@ -3,7 +3,7 @@ get '/www/list/:name' do
 	@tag 				= params[:name]
 	@page_size			= 20
  	@posts 				= www_list @tag, @page_size
-	@t[:title]			= @tag + ' - ' + _var(:www_title, :www)
+	@t[:title]			= @tag + ' - ' + _var(:title, :www)
 	www_page :www_list
 end
 
