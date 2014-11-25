@@ -14,7 +14,8 @@ data :www_posts do
 		},
 		:title				=>	{},
 		:body				=>	{
-			:type			=>	'Text'
+			:type			=>	'Text',
+			:editor			=>	true
 		},
 		:wtid				=>	{
 			:assoc_one		=>	[:www_types, :name],
