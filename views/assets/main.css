@@ -39,6 +39,10 @@ pre, code {
 #main .label {
 	background: #E2D5BD;
 }
+progress {
+	background-color: white;
+	height: 8px;
+}
 
 .top-bar .name h1 a,
 .top-bar-section ul li > a,
