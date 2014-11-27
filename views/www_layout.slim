@@ -22,6 +22,13 @@ html class="no-js" lang="en"
 						span = Sl[:menu]
 
 			section.top-bar-section
+				ul.left
+					- menu = data_menu(:www_main_menu)
+					- if menu
+						- menu.each do | r |
+							li
+								a href="#{r[:link]}" = r[:name]
+
 				ul.right
 					li.has-dropdown
 						a href="#" = user_info[:name]
@@ -34,14 +41,6 @@ html class="no-js" lang="en"
 							- else
 								li
 									a href="#{_url('/l')}" = Sl[:login]
-
-				ul.left
-					- menu = data_menu(:www_main_menu)
-					- if menu
-						- menu.each do | r |
-							li
-								a href="#{r[:link]}" = r[:name]
-
 
 		.holderplace.hide-for-small
 		#msg == _tpl(:view_message)

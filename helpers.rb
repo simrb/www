@@ -52,6 +52,7 @@ helpers do
 	end
 
 	def user_page name
+		@t[:title] = _var(:title, :www) if @t[:title] == nil
 		_tpl name, _var(:layout, :www).to_sym, :www
 	end
 
