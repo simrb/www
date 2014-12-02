@@ -55,6 +55,7 @@ get '/www/edit/post' do
 		'-',
 		Sl['new a post']
 	]
+	@t[:title]			= @nav[0]
 
 	view_form(:www_posts, {
 			:layout 		=> _var(:layout, :www).to_sym,
@@ -73,5 +74,4 @@ post '/www/edit/post' do
 		redirect _url("/www/post/#{cpid}")
 	end
 end
-
 
