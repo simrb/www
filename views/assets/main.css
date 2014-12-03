@@ -39,6 +39,10 @@ pre, code {
 #main .label {
 	background: #E2D5BD;
 }
+#main .panel {
+	border-color: #8A785A;
+	background: #E7DCC8;
+}
 
 
 .top-bar .name h1 a,
