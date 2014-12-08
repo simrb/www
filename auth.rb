@@ -9,7 +9,7 @@ before '/www/edit/post' do
 	view_login?
 end
 
-before '/view/operate' do
+before '/view/operate/*' do
 	if params[:_name] == 'www_posts'
 		view_level? _var(:post_level, :www)
 	elsif params[:_name] == 'www_comments'
