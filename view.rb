@@ -66,7 +66,7 @@ get '/www/edit/post' do
 end
 
 post '/www/edit/post' do
-	data_submit :www_posts
+	view_post_submit :www_posts
 	cpid = @qs[:cpid] ? @qs[:cpid] : (params[:cpid] ? params[:cpid] : nil)
 	if cpid == nil
 		redirect _url('/www/list/all')
