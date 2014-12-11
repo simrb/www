@@ -1,4 +1,6 @@
-### A simple blog module that lets you publish article
+### INTRODUCTION
+
+A simple blog module that lets you publish article
 
 ### LICENSE
 
