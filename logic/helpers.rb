@@ -51,6 +51,7 @@ helpers do
 		user_login? ? user_info[:name] : (_ip[0, (_ip.size - 1)] + '*')
 	end
 
+	# overwrite the method of user module from main-repo
 	def user_page name
 		@t[:title] = _var(:title, :www) if @t[:title] == nil
 		_tpl name, _var(:layout, :www).to_sym, :www

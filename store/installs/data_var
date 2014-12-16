@@ -29,13 +29,3 @@
   description	: open the comment with on/off value
   tag			: www
 
-- dkey			: comment_level
-  dval			: 0
-  description	: allow the user add the comment under this level
-  tag			: www,level
-
-- dkey			: post_level
-  dval			: 1
-  description	: allow the user create a post under this level
-  tag			: www,level
-
